@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+.player {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2, h3 {
+    color: #333;
+    margin: 5px 0;
+}
+
+.progress-container {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    appearance: none;
+    background: #fff;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.control-btn {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn:hover {
+    background: #ff5964;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#prev { left: 10px; }
+#menu { right: 10px; }

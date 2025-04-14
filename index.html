@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="player">
+        <button id="prev" class="nav-btn"></button>
+        <div class="music-container">
+            <div class="img-container">
+                <img src="size_m.jpg" alt="Ishq Hai Album Cover" class="album-cover" id="cover1">
+                <img src="meem.jpg" alt="Meem Se Mohabbat Album Cover" class="album-cover" id="cover2" style="display: none;">
+                <img src="iqtidar.jpg" alt="Iqtidar Album Cover" class="album-cover" id="cover3" style="display: none;">
+            </div>
+            <h2 id="title">Ishq Hai</h2>
+            <h3 id="artist">Mismatched 3</h3>
+
+            <audio id="audio1">
+                <source src="128-Ishq Hai - Mismatched Season 3 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio2" style="display: none;">
+                <source src="meem se mohabat.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio3" style="display: none;">
+                <source src="Iqtidar.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="progress-container">
+                <input type="range" id="progress-bar" min="0" max="100" value="0">
+            </div>
+
+            <div class="controls">
+                <button id="prev-btn" class="control-btn">⏮</button>
+                <button id="play-btn" class="control-btn">▶</button>
+                <button id="next-btn" class="control-btn">⏭</button>
+            </div>
+        </div>
+        <button id="menu" class="nav-btn">☰</button>
+    </div>
+</body>
+</html>
